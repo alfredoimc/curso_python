@@ -1,14 +1,12 @@
-from random import randint
+﻿from random import randint
 print("Bem vindo!!!")
 numero_sorteado = randint(1,100)
-# print(numero_sorteado)
 novo_jogo = True
 while novo_jogo != False:
 contador = 0
 while True:
 chute = int(input("Chute um número: "))
 if chute == numero_sorteado:
-print("Parabéns, você é foda.")
 break
 else:
 print("Alto" if chute > numero_sorteado else "Baixo")
